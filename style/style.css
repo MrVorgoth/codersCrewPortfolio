@@ -2,3 +2,162 @@ body {
   color: white;
   background-color: #444;
 }
+
+/* contact css */
+
+.contact {
+  background-color: #252e30;
+  width: 100%;
+}
+
+.contact__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 74%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.contact__wrapper {
+  width: 34%;
+}
+
+.contact__headline {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 0;
+}
+
+.contact__text {
+  color: #919191;
+  font-size: 16px;
+  margin: 0;
+}
+
+.contact__desc {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contact__info {
+  color: #b6b9ba;
+  margin: 0;
+}
+
+.contact__email {
+  padding-top: 45px;
+}
+
+.contact__phone {
+  padding-top: 20px;
+}
+
+.contact__span {
+  padding-left: 40px;
+}
+
+.form__wrapper {
+  width: 34%;
+}
+
+.form__name,
+.form__email,
+.form__textarea {
+  background-color: #4b5456;
+  border: none;
+  font-size: 25px;
+  color: white;
+  padding-left: 10px;
+}
+
+.form__name,
+.form__email {
+  width: 540px;
+  height: 56px;
+}
+
+.form__textarea {
+  width: 540px;
+}
+
+.form__label {
+  color: #ffffff;
+}
+
+.form__text {
+  margin: 0;
+  padding-top: 35px;
+  font-size: 18px;
+}
+
+span {
+  color: #6d7071;
+}
+
+.form__input {
+  color: #ffffff;
+  background-color: #191f21;
+  padding: 20px;
+  font-size:16px;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 38px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #191f21;
+}
+
+.footer__wrapper {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  padding-bottom: 20px;
+  margin: 0;
+  color: #485052;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer__wrapper-icon {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #4b5456;
+  border-radius: 100%;
+  background-color: #4b5456;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.fab {
+  font-size: 15px;
+  color: #191f21;
+}
+
+.fab:hover {
+  color: #ffffff;
+}
