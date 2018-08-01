@@ -9,8 +9,8 @@ WAŻNE: Nie pracować na masterze !!! Każdy z was stworzy nową "branch" i na n
 Kilka słów o stylu dla całego projektu: 
 
 - Wczoraj wczoraj ustaliliśmy następującą konwencję co do identyfikatorów i nazw klas na stronie -> 
-dla branchy section_about_me nazwa diva w css powinna wyglądać tak: about_me_div, analogicznie dla innych branczy.
+dla branchy section_about_me nazwa diva container w css powinna wyglądać tak: about_me_container, analogicznie dla innych branczy.
 
 - Jestem też za stosowaniem całkowicie angielskich nazw przy nazewnictwie elementów, według mnie jest to czytelniejsze i sprawia o wiele bardziej profesjonalne wrażenie
 
-//dopisałem bo info może okazać się przydatne, poza tym testuję pull requesty i merge z submodułu gita ~ Miłosz
+- Ze wzlędu na rozmiar pliku css ewnetualne animacje można zamieścić w osobnym arkuszu, będzie to logiczny, czytelny podział
