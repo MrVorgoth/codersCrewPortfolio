@@ -1,6 +1,9 @@
 body {
   color: white;
   background-color: #444;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* contact css */
@@ -84,6 +87,7 @@ body {
 
 .form__textarea {
   width: 540px;
+  resize: none;
 }
 
 .form__label {
@@ -110,6 +114,11 @@ span {
   margin-top: 38px;
 }
 
+.form__input:hover {
+  color: #191f21;
+  background-color: #ffffff;
+}
+
 /* footer */
 
 .footer {
@@ -130,6 +139,7 @@ span {
   color: #485052;
   font-size: 16px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .footer__wrapper-icon {
