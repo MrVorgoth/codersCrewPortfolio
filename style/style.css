@@ -2,7 +2,10 @@ body {
   color: white;
   background-color: #444;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 .my_skills_wrapper {
   width: 100%;
   height: 650px;
@@ -10,6 +13,7 @@ body {
   grid-template-columns: 1fr 1fr;
   background-color: white;
 }
+
 @media screen and (max-width: 768px) {
   .my_skills_wrapper {
     width: 100%;
@@ -20,6 +24,7 @@ body {
     background-color: white;
   }
 }
+
 .my_skills--txt-container {
   height: 700px;
   padding: 10% 10% 5% 20%;
@@ -27,37 +32,44 @@ body {
   color: #919191;
   background-color: white;
 }
+
 @media screen and (max-width: 768px) {
   .my_skills--txt-container {
     padding: 5% 10% 5% 10%;
   }
 }
+
 @media screen and (max-width: 576px) {
   .my_skills--txt-container {
     padding: 5% 10% 0 10%;
   }
 }
+
 .my_skills--header {
   text-transform: uppercase;
   color: #566366;
   font-size: 1.8em;
 }
+
 @media screen and (max-width: 992px) {
   .my_skills--header {
     font-size: 1.5em;
   }
 }
+
 @media screen and (max-width: 768px) {
   .my_skills--header {
     margin-bottom: 50px;
   }
 }
+
 @media screen and (max-width: 570px) {
   .my_skills--header {
     margin-bottom: 20px;
     font-size: 1.2em;
   }
 }
+
 .my_skills--txt-container > p{
   line-height: 1.8em;
 }
@@ -67,12 +79,14 @@ body {
     font-size: 1em;
   }
 }
+
 @media screen and (max-width: 576px) {
   .my_skills--txt-container > p{
     line-height: 1.6em;
     font-size: 0.8em;
   }
 }
+
 .my_skills--button {
   height: 60px;
   width: 185px;
@@ -84,16 +98,20 @@ body {
   font-weight: 700;
   transition: 400ms linear;
 }
+
 .my_skills--button:hover {
   background: #2ecc71;
   border: 2px solid #2ecc71;
   color: white;
+  cursor: pointer;
 }
+
 @media screen and (max-width: 768px) {
   .my_skills--button {
     display: none;
   }
 }
+
 .my_skills--button-mobile{
   display: none;
   }
@@ -101,7 +119,9 @@ body {
     background: #2ecc71;
     border: 2px solid #2ecc71;
     color: white;
+    cursor: pointer;
   }
+
 @media screen and (max-width: 768px){
 .my_skills--button-mobile{
   display: block;
@@ -116,6 +136,7 @@ body {
   transition: 400ms linear;
   }
 }
+
 @media screen and (max-width: 576px){
 .my_skills--button-mobile{
   height: 40px;
@@ -127,6 +148,7 @@ body {
   transition: 400ms linear;
   }
 }
+
 .my_skills--bar-container {
   position: relative;
   padding: 14% 20% 10% 0;
@@ -138,12 +160,14 @@ body {
     margin-top: -80px;
   }
 }
+
 @media screen and (max-width: 576px) {
   .my_skills--bar-container {
     padding: 0 10% 10% 10%;
     margin-top: -130px;
   }
 }
+
 .my_skills--bar-container > p {
   text-transform: uppercase;
   color: #566366;
@@ -151,25 +175,30 @@ body {
   font-size: 22px;
   margin: 40px 0 0 0;
 }
+
 .my_skills--bar-container > p:first-child {
   margin: 25px 0 0 0;
 }
+
 @media screen and (max-width: 992px) {
   .my_skills--bar-container > p {
     font-size: 1em;
   }
 }
+
 @media screen and (max-width: 576px) {
   .my_skills--bar-container > p {
     font-size: 0.8em;
     margin-top: 10px;
   }
 }
+
 .my_skills--bar {
   height: 30px;
   width: 100%;
   background-color: #f2f2f1;
 }
+
 @media screen and (max-width: 576px) {
   .my_skills--bar {
     height: 20px;
@@ -177,112 +206,25 @@ body {
     background-color: #f2f2f1;
   }
 }
+
 .my_skills_bar--green-bar {
   height: 100%;
   background-color: #2ecc71;
 }
+
 .photoshop_bar {
   width: 90%;
 }
-.my_skills_bar-glow {
-  position: relative;
-  left: 0;
-  transform: rotate(30deg);
-  background-color: white;
-  width: 1px;
-  height: 30px;
-  box-shadow: 0 0 30px 15px white;
-}
-.my_skills-photoshop-glow {
-  opacity: 0;
-  animation: photoshop_glow 5s linear infinite;
-}
-@keyframes photoshop_glow {
-  0% {
-    left: 0;
-    opacity: 0.3;
-  }
-  15% {
-    opacity: 0.2;
-  }
-  17% {
-    left: 900px;
-    opacity: 0;
-  }
-  100% {
-  opacity: 0;
-  }
-}
-.illustrator_bar{
-  width: 80%;
-}
-.my_skills-illustrator-glow {
-  opacity: 0;
-  animation: illustrator_glow 5s linear 150ms infinite;
-}
-@keyframes illustrator_glow {
-  0% {
-    left: 0;
-    opacity: 0.3;
-  }
-  15% {
-    opacity: 0.2;
-  }
-  17% {
-    left: 900px;
-    opacity: 0;
-  }
-  100% {
-  opacity: 0;
-  }
-}
-.my_skills-html-glow {
-  opacity: 0;
-  animation: html_glow 5s linear 300ms infinite;
-  }
-  @keyframes html_glow {
-  0% {
-    left: 0;
-    opacity: 0.3;
-  }
-  15% {
-    opacity: 0.2;
-  }
-  17% {
-    left: 900px;
-    opacity: 0;
-  }
-  100% {
-  opacity: 0;
-  }
-  }
-.my_skills-php-glow {
-  opacity: 0;
-  animation: php_glow 5s linear 450ms infinite;
-  }
-  @keyframes php_glow {
-  0% {
-    left: 0;
-    opacity: 0.3;
-  }
-  15% {
-    opacity: 0.2;
-  }
-  17% {
-    left: 900px;
-    opacity: 0;
-  }
-  100% {
-  opacity: 0;
-  }
-  }
-.php_bar{
+
+.php_bar {
   width: 70%;
 }
+
 .my_skills--percents {
   text-align: right;
   padding: 5px 7px 0 0;
 }
+
 @media screen and (max-width: 576px) {
   .my_skills--percents {
     font-size: 0.7em;
