@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  width: 74%;
+  width: 90%;
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -81,12 +81,12 @@ body {
 
 .form__name,
 .form__email {
-  width: 540px;
+  width: 100%;
   height: 56px;
 }
 
 .form__textarea {
-  width: 540px;
+  width: 100%;
   resize: none;
 }
 
