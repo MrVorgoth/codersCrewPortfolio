@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* contact css */
+/* contact + form css */
 
 .contact {
   background-color: #252e30;
@@ -22,8 +22,8 @@ body {
   justify-content: space-around;
   margin: 0 auto;
   width: 90%;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .contact__wrapper {
@@ -44,8 +44,8 @@ body {
 }
 
 .contact__desc {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .contact__info {
@@ -58,11 +58,11 @@ body {
 }
 
 .contact__phone {
-  padding-top: 20px;
+  padding-top: 2%;
 }
 
 .contact__span {
-  padding-left: 40px;
+  padding-left: 3%;
 }
 
 .form__wrapper {
@@ -96,7 +96,8 @@ body {
 
 .form__text {
   margin: 0;
-  padding-top: 35px;
+  padding-top: 10%;
+  padding-bottom: 2%;
   font-size: 18px;
 }
 
@@ -107,11 +108,11 @@ span {
 .form__input {
   color: #ffffff;
   background-color: #191f21;
-  padding: 20px;
+  padding: 5%;
   font-size:16px;
   text-transform: uppercase;
   border: none;
-  margin-top: 38px;
+  margin-top: 10%;
 }
 
 .form__input:hover {
@@ -123,8 +124,8 @@ span {
 
 .footer {
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: #191f21;
 }
 
@@ -134,7 +135,7 @@ span {
 }
 
 .footer__copyright {
-  padding-bottom: 20px;
+  padding-bottom: 2%;
   margin: 0;
   color: #485052;
   font-size: 16px;
@@ -160,7 +161,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10px;
+  margin-left: 1%;
 }
 
 .fab {
@@ -170,4 +171,58 @@ span {
 
 .fab:hover {
   color: #ffffff;
+}
+
+/*media  576 px */
+
+@media (max-width: 576px) {
+  .contact__container {
+    flex-direction: column;
+  }
+  
+  .contact__wrapper {
+    margin: 0 auto;
+    width: 70%;
+  }
+  
+  .form__wrapper {
+    margin: 0 auto;
+  }
+  
+  .contact__headline {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 5%;
+  }
+  
+  .contact__desc {
+    padding-bottom: 10%;
+  }
+  
+  .contact__text {
+    text-align: center;
+  }
+  
+  .contact__info {
+    text-align: center;
+  }
+  
+  .form__text {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 15%;
+  }
+  
+  .form__name,
+  .form__email {
+    height: 100%;
+  }
+  
+  .form__input {
+    font-size: 14px;
+  }
+  
+  .footer__copyright {
+    font-size: 14px;
+  }
 }
