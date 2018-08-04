@@ -2,3 +2,46 @@ body {
   color: white;
   background-color: #444;
 }
+
+.about-me-container {
+  width: 100%;
+  background-color: #e8eaed;
+  max-height: 825px;
+  color: black;
+  display: flex;
+  overflow: hidden;
+
+  /*this part of syling of about me container is to be deleted before project integration */
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* that part of code is supposed to make img responsive, but its making the image too small /*
+/* 
+.about-me-image img{
+  bottom: 0;
+  max-width: 100%;
+}
+*/
+
+.about-me-content {
+  padding: 30px 50px 30px 40px;
+}
+
+.about-me-box {
+  min-height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.about-me-box-elem {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  border: 3px solid red;
+}
+
+
+
+
