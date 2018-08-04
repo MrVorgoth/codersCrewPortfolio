@@ -1,15 +1,17 @@
 body {
-  color: white;
   background-color: #444;
+  font-family: 'Roboto', sans-serif;
+
+  
 }
 
 .about-me-container {
   width: 100%;
   background-color: #e8eaed;
   max-height: 825px;
-  color: black;
   display: flex;
   overflow: hidden;
+  color: #919191;
 
   /*this part of syling of about me container is to be deleted before project integration */
   max-width: 1400px;
@@ -17,20 +19,17 @@ body {
   margin-right: auto;
 }
 
-/* that part of code is supposed to make img responsive, but its making the image too small /*
-/* 
-.about-me-image img{
-  bottom: 0;
-  max-width: 100%;
-}
-*/
+
 
 .about-me-content {
-  padding: 30px 50px 30px 40px;
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .about-me-box {
-  min-height: 50%;
+  min-height: 40%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -38,9 +37,25 @@ body {
 
 .about-me-box-elem {
   display: flex; 
-  flex-basis: calc(50% - 40px);  
-  border: 3px solid red;
+  flex-basis: calc(50% - 40px); 
 }
+
+.about-me-box-elem-icon {
+  margin-top: 10%;
+  margin-bottom: 90%;
+  margin-right: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.about-me-container h3 {
+  color: #566366;
+}
+
+.about-me-description {
+  padding-bottom: 30px;
+}
+
 
 
 
