@@ -19,8 +19,6 @@ body {
   margin-right: auto;
 }
 
-
-
 .about-me-content {
   padding-left: 100px;
   padding-right: 50px;
@@ -33,6 +31,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .about-me-box-elem {
