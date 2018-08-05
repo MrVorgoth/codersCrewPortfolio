@@ -5,6 +5,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section_logo_nav_container {
   background: url("../assets/1.png");
   background-position: 50%;
@@ -39,10 +43,6 @@ body {
 .section_logo_nav_text_container p {
   margin: 10px 0;
   font-weight: 600;
-}
-
-a {
-  text-decoration: none;
 }
 
 .section_logo_nav_logo_button {
@@ -121,6 +121,11 @@ a {
     height: 100vh;
   }
 
+  .section_logo_nav_text_container {
+    margin-top: 30vh;
+    margin-bottom: 5%;
+  }
+
   .section_logo_nav_icon {
     margin-left: 5%;
   }
@@ -151,7 +156,7 @@ a {
   }
 
   .section_logo_nav_text_container {
-    width: 95%;
+    width: 400px;
     font-size: 30px;
   }
 
@@ -187,6 +192,7 @@ a {
 
   .section_logo_nav_nav_container a {
     font-size: 17px;
+    padding: 10px 0;
   }
 
   .section_logo_nav_name p {
@@ -201,5 +207,10 @@ a {
     margin-bottom: 150px;
     margin-top: 50px;
   }
+}
 
+@media only screen and (max-width: 576px) {
+  .section_logo_nav_text_container {
+    width: 85%;
+  }
 }
