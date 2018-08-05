@@ -1,6 +1,5 @@
 .my_skills_wrapper {
   width: 100%;
-  height: 650px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: white;
@@ -18,7 +17,6 @@
 }
 
 .my_skills--txt-container {
-  height: 700px;
   padding: 10% 10% 5% 20%;
   box-sizing: border-box;
   color: #919191;
