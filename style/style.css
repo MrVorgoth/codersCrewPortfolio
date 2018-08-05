@@ -6,11 +6,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* contact + form css */
-
 .contact {
   background-color: #252e30;
   width: 100%;
+  min-height: 90vh;
 }
 
 .contact__container {
@@ -101,10 +100,6 @@ body {
   font-size: 18px;
 }
 
-span {
-  color: #6d7071;
-}
-
 .form__input {
   color: #ffffff;
   background-color: #191f21;
@@ -113,25 +108,20 @@ span {
   text-transform: uppercase;
   border: none;
   margin-top: 10%;
+  transition: .5s all;
 }
 
 .form__input:hover {
+  cursor: pointer;
   color: #191f21;
   background-color: #ffffff;
 }
-
-/* footer */
 
 .footer {
   width: 100%;
   padding-top: 3%;
   padding-bottom: 3%;
   background-color: #191f21;
-}
-
-.footer__wrapper {
-  width: 20%;
-  margin: 0 auto;
 }
 
 .footer__copyright {
@@ -173,55 +163,40 @@ span {
   color: #ffffff;
 }
 
-/*media  576 px */
-
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contact__container {
     flex-direction: column;
   }
-  
-  .contact__wrapper {
-    margin: 0 auto;
+
+  .contact__wrapper, .form__wrapper {
     width: 70%;
-  }
-  
-  .form__wrapper {
     margin: 0 auto;
-  }
-  
-  .contact__headline {
     text-align: center;
+  }
+
+  .contact__headline {
     font-size: 32px;
     padding-bottom: 5%;
   }
-  
+
   .contact__desc {
     padding-bottom: 10%;
   }
-  
-  .contact__text {
-    text-align: center;
-  }
-  
-  .contact__info {
-    text-align: center;
-  }
-  
+
   .form__text {
-    text-align: center;
     font-size: 15px;
     padding-top: 15%;
   }
-  
+
   .form__name,
   .form__email {
     height: 100%;
   }
-  
+
   .form__input {
     font-size: 14px;
   }
-  
+
   .footer__copyright {
     font-size: 14px;
   }
