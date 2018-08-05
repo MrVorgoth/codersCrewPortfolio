@@ -1,33 +1,38 @@
-body {
-  background-color: #444;
-  font-family: 'Roboto', sans-serif;
-
-  
-}
-
 .about-me-container {
   width: 100%;
-  background-color: #e8eaed;
-  max-height: 825px;
   display: flex;
+  flex-flow: row wrap;
   overflow: hidden;
   color: #919191;
+  background-color: #E8EAED;
+}
 
-  /*this part of syling of about me container is to be deleted before project integration */
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+.about-me-container h3 {
+  color: #566366;
+}
+
+.about-me-image {
+  flex: 1;
+  background: url("../assets/2.png") no-repeat center;
+  background-size: cover;
+  background-position: 30% 50%;
 }
 
 .about-me-content {
-  padding-left: 100px;
-  padding-right: 50px;
-  padding-bottom: 20px;
-  padding-top: 50px;
+  flex: 2;
+  padding: 5%;
+}
+
+.about-me-description {
+  padding-bottom: 5%;
+}
+
+.about-me-description h3 {
+  font-size: 24px;
+  padding-bottom: 3%;
 }
 
 .about-me-box {
-  min-height: 40%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -35,27 +40,28 @@ body {
 }
 
 .about-me-box-elem {
-  display: flex; 
-  flex-basis: calc(50% - 40px); 
+  display: flex;
+  flex-basis: calc(50% - 40px);
 }
 
 .about-me-box-elem-icon {
-  margin-top: 10%;
-  margin-bottom: 90%;
-  margin-right: 10%;
-  padding-right: 10%;
-  padding-left: 10%;
+  box-sizing: border-box;
+  padding: 5% 5% 0 0;
 }
 
-.about-me-container h3 {
-  color: #566366;
+@media (max-width: 576px) {
+  .about-me-box {
+    flex-direction: column;
+  }
 }
 
-.about-me-description {
-  padding-bottom: 30px;
+@media (max-width: 992px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+  .about-me-image {
+    height: 50vh;
+    background-size: contain;
+    background-position: center;
+  }
 }
-
-
-
-
-
