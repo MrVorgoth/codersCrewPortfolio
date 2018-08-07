@@ -1,0 +1,93 @@
+#portfolio_wrapper {
+    width: 100%;
+    background-color: white;
+}
+
+#portfolio--header {
+    color: #566366;
+    font-size: 1.4em;
+    padding: 1% 10% 5%;
+    text-align: center;
+}
+
+.portfolio-wrapper__header {
+  text-transform: uppercase;
+}
+
+.portfolio--tiles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    column-gap: 40px;
+    grid-row-gap: 40px;
+    padding-top: 40px;
+}
+
+.portfolio--tile {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    max-height: 400px;
+}
+
+.portfolio--tile-filter {
+    background-color: #444;
+    color: #cccccc
+}
+
+.portfolio--tile-filter h3 {
+    font-size: 1em;
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+.portfolio--tile-filter p {
+    font-size: 0.7em;
+    padding-left: 15px;
+}
+
+.portfolio--tile-filter p:hover {
+    padding-left: 15px;
+    color: #ffffff;
+}
+
+.portfolio--tile img {
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio--tiles-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio--tile-filter p {
+        font-size: 0.5em;
+    }
+
+    .portfolio--tile-filter h3 {
+        font-size: 0.7em;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio--tile-filter p {
+        font-size: 0.4em;
+    }
+
+    .portfolio--tile-filter h3 {
+        font-size: 0.5em;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio--tiles-container {
+        grid-template-columns: 1fr;
+    }
+}
+.portfolio--tile-overlay{
+    position: absolute;
+}
