@@ -6,98 +6,17 @@
 #portfolio--header {
     color: #566366;
     font-size: 1.4em;
-    padding: 150px;
+    padding: 10%;
     text-align: center;
 }
 
 .portfolio--tiles-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     justify-content: space-evenly;
     column-gap: 40px;
     grid-row-gap: 40px;
     padding-top: 40px;
-
-}
-
-@media screen and (max-width: 900px) {
-    .portfolio--tiles-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        justify-content: space-evenly;
-        column-gap: 40px;
-        grid-row-gap: 40px;
-        padding-top: 40px;
-    }
-
-    .portfolio--tile-1 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .portfolio--tile-2 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .portfolio--tile-3 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .portfolio--tile-4 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    .portfolio--tile-5 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .portfolio--tile-6 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .portfolio--tile-7 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .portfolio--tile-8 {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-
-    .portfolio--tile-9 {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-}
-
-.portfolio--tile-overlay {
-    background-color: green;
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-
-}
-
-.portfolio--tile-overlay:hover {
-    background-color: #2e8b57;
-    opacity: 0.7;
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-    font-size: 120px;
-    text-align: center;
-    padding-top: 30%;
-    box-sizing: border-box;
 }
 
 .portfolio--tile {
@@ -105,7 +24,6 @@
     height: 100%;
     text-align: left;
     max-height: 400px;
-    max-width: 400px;
 }
 
 .portfolio--tile-filter {
@@ -122,45 +40,9 @@
 .portfolio--tile-filter p {
     font-size: 0.7em;
     padding-left: 15px;
-
-}
-
-@media screen and (max-width: 1300px) {
-
-    .portfolio--tile-filter p {
-        font-size: 0.5em;
-        padding-left: 15px;
-    }
-
-    .portfolio--tile-filter h3 {
-        font-size: 0.7em;
-        padding-left: 10px;
-        color: #ffffff;
-    }
 }
 
 .portfolio--tile-filter p:hover {
-    font-size: 0.75em;
-    padding-left: 15px;
-    color: #ffffff;
-}
-
-@media screen and (max-width: 980px) {
-
-    .portfolio--tile-filter p {
-        font-size: 0.4em;
-        padding-left: 15px;
-    }
-
-    .portfolio--tile-filter h3 {
-        font-size: 0.5em;
-        padding-left: 10px;
-        color: #ffffff;
-    }
-}
-
-.portfolio--tile-filter p:hover {
-    font-size: 0.75em;
     padding-left: 15px;
     color: #ffffff;
 }
@@ -171,48 +53,37 @@
     align-content: center;
 }
 
-.portfolio--tile-1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
+@media screen and (max-width: 1200px) {
+    .portfolio--tiles-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio--tile-filter p {
+        font-size: 0.5em;
+    }
+
+    .portfolio--tile-filter h3 {
+        font-size: 0.7em;
+        padding-left: 10px;
+    }
 }
 
-.portfolio--tile-2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
+@media screen and (max-width: 992px) {
+    .portfolio--tile-filter p {
+        font-size: 0.4em;
+    }
+
+    .portfolio--tile-filter h3 {
+        font-size: 0.5em;
+        padding-left: 10px;
+    }
 }
 
-.portfolio--tile-3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
+@media screen and (max-width: 768px) {
+    .portfolio--tiles-container {
+        grid-template-columns: 1fr;
+    }
 }
-
-.portfolio--tile-4 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.portfolio--tile-5 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    overflow: hidden;
-}
-
-.portfolio--tile-6 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.portfolio--tile-7 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.portfolio--tile-8 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.portfolio--tile-9 {
-    grid-column: 3/4;
-    grid-row: 3/4;
+.portfolio--tile-overlay{
+    position: absolute;
 }
